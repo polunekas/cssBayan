@@ -1,0 +1,45 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f5fffa;
+  margin: 0 40%;
+}
+
+.title {
+	font-weight: bold;
+	line-height: 3.5;
+}
+
+.mem-title {
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.memes-input {
+	appearance: none;
+}
+.cross {
+	appearance: none;
+	background: url(./img/cross1.png);
+}
+
+.memes-input:checked ~.mem-img {
+	display: none;
+}
+
+.mem-img {
+	display: block;
+}
+
+.cross {
+	display: block;
+}
+
+.memes-input:checked ~.cross {
+	display: block;
+	transform: rotate(45deg);
+}
+
+.rotate-right {
+transform: rotate(45deg);
+}
