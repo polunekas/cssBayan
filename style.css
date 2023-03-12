@@ -1,53 +1,56 @@
 body {
-  font-family: Helvetica, sans-serif;
-  background-color: #f5fffa;
+  background-color: #F5FFFA;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 
 .memes {
-	width: 50%;
-	margin: 2rem auto;
-	display: block;
-}
-.title {
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.memes-item {
-	display: block;
-	padding: 0;
-	margin: 0;
-	border-bottom: 0.2rem solid lightgrey
+  margin: 3rem auto;
+  width: 80%;
 }
 
 .memes-input {
-	display: none;
+  display: none;
 }
 
-.meme-label {
-	cursor: pointer;
+.memes-item {
+  border-bottom: 0.15rem solid lightgrey;
 }
+
+.memes-input:checked + .meme-label .meme-title {
+  color: mediumblue;
+}
+
+.memes-input:checked + .meme-label .meme-title .cross {
+  transform: rotate(45deg);
+}
+
 .meme-title {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	cursor: pointer;
-}
-
-p {
-	display: block;
-	font-size: 1.5rem;
-}
-
-.cross {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .meme-img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
+.image-for-meme {
+  width: 0;
+  height: 0;
+  transition: width 1s, height 1s;
+  transition-timing-function: ease-in;
+}
+
+.memes-input:checked + .meme-label .meme-img .image-for-meme {
+  width: 25rem;
+  height: 25rem;
+  transition: width 1s, height 1s;
+}
+
+.cross {
+  transition: transform 1s;
+}
