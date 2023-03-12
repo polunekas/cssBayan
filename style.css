@@ -1,45 +1,53 @@
 body {
   font-family: Helvetica, sans-serif;
   background-color: #f5fffa;
-  margin: 0 40%;
+  margin: 0;
+  padding: 0;
 }
 
+.memes {
+	width: 50%;
+	margin: 2rem auto;
+	display: block;
+}
 .title {
+	font-size: 2rem;
 	font-weight: bold;
-	line-height: 3.5;
 }
 
-.mem-title {
-  font-weight: bold;
-  cursor: pointer;
-  display: block;
+.memes-item {
+	display: block;
+	padding: 0;
+	margin: 0;
+	border-bottom: 0.2rem solid lightgrey
 }
 
 .memes-input {
-	appearance: none;
-}
-.cross {
-	appearance: none;
-	background: url(./img/cross1.png);
-}
-
-.memes-input:checked ~.mem-img {
 	display: none;
 }
 
-.mem-img {
+.meme-label {
+	cursor: pointer;
+}
+.meme-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+p {
 	display: block;
+	font-size: 1.5rem;
 }
 
 .cross {
-	display: block;
+
 }
 
-.memes-input:checked ~.cross {
-	display: block;
-	transform: rotate(45deg);
+.meme-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.rotate-right {
-transform: rotate(45deg);
-}
