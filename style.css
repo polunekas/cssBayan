@@ -54,3 +54,33 @@ body {
 .cross {
   transition: transform 1s;
 }
+
+@media (min-width: 0px) {
+  p1 {
+    font-size: 1rem;
+  }
+  p2 {
+  	font-size: 0.5rem;
+	}
+
+}
+
+@media (min-width: 820px) {
+  p1 {
+    font-size: 2.5rem;
+  }
+  p2 {
+  	font-size: 1.5rem;
+	}
+
+}
+
+@media (min-width: 1920px) {
+  p1 {
+    font-size: 3rem;
+  }
+  p2 {
+  	font-size: 2rem;
+	}
+
+}
